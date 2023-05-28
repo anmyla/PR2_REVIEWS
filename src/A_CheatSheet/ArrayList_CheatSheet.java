@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class ArrayList_CheatSheet {
 
-    //CREATION: Declaration in a class (didn't initialzed it but it works)---------------------------
-    ArrayList<MyObject> newArrayList;
+    //CREATION------------------------------
+    ArrayList<MyObject> newArrayList = new ArrayList<>();
 
     //DUMMY CONSTRUCTOR
     public ArrayList_CheatSheet(ArrayList<MyObject> newArrayList) {

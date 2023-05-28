@@ -10,9 +10,9 @@ import java.util.Comparator;
 
 import static java.util.Collections.*;
 
-
+//FOR COMPARATOR, YOU HAVE TO MAKE A SEPARATE COMPARATOR CLASS UNLIKE COMPARABLE
 //DONT FORGET THE KEYWORD "IMPLEMENTS" COMPARATOR<CLASS/OBJECT NAME>
-public class Comparator_CheatSheet implements Comparator<Comparable_CheatSheet> { //You have to decide with to use to compare your objects so you knw what to implement.
+public class Comparator_CheatSheet implements Comparator<Comparable_CheatSheet> { //!!!!!!! <MyObjectClass>
 
     @Override
     public int compare(Comparable_CheatSheet o1, Comparable_CheatSheet o2) {

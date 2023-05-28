@@ -65,11 +65,11 @@ public class HashMap_CheatSheet{
 
     //CREATE A HASHMAP FROM AN ARRAYLIST---------------------
     //Objects in the list must follow <Integer, String> attributes
-    public HashMap<Integer, String> createdHashMapFromAnArrayList(ArrayList<Object> arrayList) {
+    public HashMap<Integer, String> createdHashMapFromAnArrayList(ArrayList<MyObject> arrayList) {
         HashMap<Integer, String> createdHashMap = new HashMap<>();
-        for (Object item : arrayList) {
-            Integer key = item.getHashKey(); //retrieve/extract the Integer value
-            String value = item.getHashValue(); //retrieve/extract the String value
+        for (MyObject item : arrayList) {
+            Integer key = item.getoKey(); //retrieve/extract the Integer value
+            String value = item.getoValue(); //retrieve/extract the String value
             createdHashMap.put(key, value); //save the retrieved values to a Hashmap entry
         }
         return createdHashMap;

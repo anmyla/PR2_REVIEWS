@@ -12,7 +12,7 @@ public class InstrumentComparator implements Comparator<Instrument2> {
             return result;
         }
         //Nicknames are the same
-        // we can use if clause to compare or use Double.compare() like this: (or Integer.compare() for integers
+        // we can use ifclause to compare or use Double.compare() like this: (or Integer.compare() for integers
         return Double.compare(o1.getValue(),o2.getValue());
     }
 }

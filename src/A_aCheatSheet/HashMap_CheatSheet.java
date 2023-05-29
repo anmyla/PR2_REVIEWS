@@ -140,4 +140,37 @@ public class HashMap_CheatSheet{
         }
         return newHashmapCreated;
     }
+
+    //EXAMPLE: ADD ENTRY TO A HASHMAP //in this ex. "players" is a Hahmap
+    /*
+    public boolean addCard(Player p, Integer cardValue) {
+        boolean cardRaised = false;
+        Integer currentValue;
+
+        if (players.containsKey(p)) {
+            currentValue = players.get(p) + 1;
+            cardRaised = true;
+        } else {
+            cardRaised = false;
+        }
+
+        return cardRaised;
+    }
+
+    //EXAMPLE2: ADD ENTRY TO A HASHMAP
+  public boolean addCard(Player p, Integer cardValue) { //in this ex. "players" is a Hahmap
+    boolean cardRaised = false;
+
+    for (Map.Entry<Player, Integer> entry : players.entrySet()) {
+        if (entry.getKey().equals(p)) {
+            Integer currentValue = entry.getValue() + 1;
+            entry.setValue(currentValue);
+            cardRaised = true;
+            break;
+        }
+    }
+
+    return cardRaised;
+}
+     */
 }

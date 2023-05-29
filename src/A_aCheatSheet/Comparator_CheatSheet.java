@@ -5,13 +5,13 @@ package A_aCheatSheet;
 import java.util.Comparator;
 
 //FOR COMPARATOR, YOU HAVE TO MAKE A SEPARATE COMPARATOR CLASS UNLIKE COMPARABLE
-//DONT FORGET THE KEYWORD "IMPLEMENTS" COMPARATOR<CLASS/OBJECT NAME>
+//DONT FORGET THE KEYWORD "IMPLEMENTS" COMPARATOR<CLASS/OBJECT NAME> and import utility!!!!
 public class Comparator_CheatSheet implements Comparator<Comparable_CheatSheet> { //!!!!!!! <MyObjectClass>
 
     @Override
-    public int compare(Comparable_CheatSheet o1, Comparable_CheatSheet o2) {
+    public int compare(Comparable_CheatSheet o1, Comparable_CheatSheet o2) { //method name is compare!
         // Compare based on the int value
-        int keyComparison = o1.getoKey2().compareTo(o2.getoKey2());
+        int keyComparison = o1.getoKey2().compareTo(o2.getoKey2()); // the class being compared must have compareTo method.
         if (keyComparison != 0) {
             return keyComparison;
         }
